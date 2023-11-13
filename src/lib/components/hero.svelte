@@ -37,8 +37,8 @@
 	<h1 class="text-8xl font-oswald font-black uppercase">
 		{title}
 	</h1>
-	{#if showRobi}
-		<div class="absolute w-48 right-0 -z-10">
+	<div class="absolute w-48 right-0 -z-10">
+		{#if showRobi}
 			<img src={Robi} alt="Robi" class="w-48" bind:this={anchor} />
 			<img
 				src={Eye}
@@ -56,6 +56,6 @@
 				style:top={eyesTop}
 				style="left: 124px"
 			/>
-		</div>
-	{/if}
+		{/if}
+	</div>
 </section>
