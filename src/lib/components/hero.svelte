@@ -34,24 +34,28 @@
 <svelte:window on:mousemove={handleMouseMove} />
 
 <section class="flex justify-between items-end border-b-2 border-gray-50 p-0 pb-12 relative my-12">
-	<h1 class="text-9xl font-oswald font-black">The Short Way.</h1>
-	<div class="absolute w-48 right-0">
-		<img src={Robi} alt="Robi" class="w-48" bind:this={anchor} />
-		<img
-			src={Eye}
-			alt=""
-			class="absolute w-4"
-			bind:this={eyeLeft}
-			style:top={eyesTop}
-			style="left:  85px"
-		/>
-		<img
-			src={Eye}
-			alt=""
-			class="absolute w-4"
-			bind:this={eyeRight}
-			style:top={eyesTop}
-			style="left: 124px"
-		/>
-	</div>
+	<h1 class="text-9xl font-oswald font-black">
+		{title}
+	</h1>
+	{#if showRobi}
+		<div class="absolute w-48 right-0">
+			<img src={Robi} alt="Robi" class="w-48" bind:this={anchor} />
+			<img
+				src={Eye}
+				alt=""
+				class="absolute w-4"
+				bind:this={eyeLeft}
+				style:top={eyesTop}
+				style="left:  85px"
+			/>
+			<img
+				src={Eye}
+				alt=""
+				class="absolute w-4"
+				bind:this={eyeRight}
+				style:top={eyesTop}
+				style="left: 124px"
+			/>
+		</div>
+	{/if}
 </section>
