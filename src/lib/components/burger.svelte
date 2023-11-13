@@ -2,7 +2,7 @@
 	import { menu } from '$lib/stores/menu';
 </script>
 
-<div class="fixed top-4 right-4">
+<div class="fixed top-4 right-4 z-50">
 	<button class="relative w-8 h-6" on:click={() => ($menu = !$menu)}>
 		<span
 			class="absolute w-full h-0.5 bg-gray-50 top-0 left-0 transition duration-150"

@@ -34,11 +34,11 @@
 <svelte:window on:mousemove={handleMouseMove} />
 
 <section class="flex justify-between items-end border-b-2 border-gray-50 p-0 pb-12 relative my-12">
-	<h1 class="text-9xl font-oswald font-black">
+	<h1 class="text-8xl font-oswald font-black uppercase">
 		{title}
 	</h1>
 	{#if showRobi}
-		<div class="absolute w-48 right-0">
+		<div class="absolute w-48 right-0 -z-10">
 			<img src={Robi} alt="Robi" class="w-48" bind:this={anchor} />
 			<img
 				src={Eye}

@@ -33,6 +33,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource-variable/oswald": "^5.0.17",
-		"@fontsource/noto-sans": "^5.0.17"
+		"@fontsource/noto-sans": "^5.0.17",
+		"@vimeo/player": "^2.20.1"
 	}
 }
