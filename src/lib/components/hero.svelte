@@ -10,6 +10,7 @@
 	let anchor: HTMLImageElement;
 
 	const handleMouseMove = (e: MouseEvent) => {
+		if (!showRobi) return;
 		const { clientX, clientY } = e;
 
 		const rekt = anchor.getBoundingClientRect();

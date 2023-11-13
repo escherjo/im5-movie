@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Hero from '$lib/components/hero.svelte';
 	import Lottie from '$lib/components/lottie.svelte';
+	import ShowTools from '$lib/components/showTools.svelte';
 	import { onMount } from 'svelte';
 
 	const lottieAnimation =
@@ -8,8 +9,8 @@
 </script>
 
 <Hero title="Tools" showRobi={false} />
-<div class="flex flex-col-reverse lg:flex-row gap-8 justify-between">
-	<p class="lg:max-w-xl">
+<section class="flex flex-col-reverse lg:flex-row gap-8 justify-between">
+	<p class="lg:max-w-xl self-center">
 		In a bustling metropolis where every circuit hums with urgency, there exists a curious robot
 		faced with an extraordinary choice. "The Short Way," a mesmerizing 3D animated short, unveils
 		the tale of this unique automaton at a crossroads. Tasked with a mission, the robot stands
@@ -21,4 +22,6 @@
 	<div class="w-1/2 lg:w-full lg:max-w-sm mx-auto">
 		<Lottie animationData={lottieAnimation} />
 	</div>
-</div>
+</section>
+
+<ShowTools />
