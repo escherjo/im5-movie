@@ -4,6 +4,14 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  '@fontsource-variable/oswald':
+    specifier: ^5.0.17
+    version: 5.0.17
+  '@fontsource/noto-sans':
+    specifier: ^5.0.17
+    version: 5.0.17
+
 devDependencies:
   '@sveltejs/adapter-auto':
     specifier: ^2.0.0
@@ -316,6 +324,14 @@ packages:
     resolution: {integrity: sha512-+KpH+QxZU7O4675t3mnkQKcZZg56u+K/Ct2K+N2AZYNVK8kyeo/bI18tI8aPm3tvNNRyTWfj6s5tnGNlcbQRsA==}
     engines: {node: '>=14'}
     dev: true
+
+  /@fontsource-variable/oswald@5.0.17:
+    resolution: {integrity: sha512-MmP1H6JmM2OjNG8QFGx1Cjt8MEoD0D4QWD1kDW8iIgHGQwCfqr8CeEMzPh2OJPoCgctaxAl6d8RfNcQMJeAEHg==}
+    dev: false
+
+  /@fontsource/noto-sans@5.0.17:
+    resolution: {integrity: sha512-VcnKA99cE8OgRiy6O3T6xCKirsguD5+MYrGrbBWYA3m3fqDArCr66eEvR3iuTngGLbTODJq4bzc6yfaiGZu/pQ==}
+    dev: false
 
   /@humanwhocodes/config-array@0.11.13:
     resolution: {integrity: sha512-JSBDMiDKSzQVngfRjOdFXgFfklaXI4K9nLF49Auh21lmBWRLIK3+xTErTWD4KU54pb6coM6ESE7Awz/FNU3zgQ==}
