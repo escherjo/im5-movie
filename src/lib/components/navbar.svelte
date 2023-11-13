@@ -20,9 +20,9 @@
 			in:fly={{ x: 200, duration: 400, opacity: 0 }}
 			out:fly={{ x: 200, duration: 200, opacity: 0 }}
 		>
-			<ul>
+			<ul class="flex flex-col gap-4">
 				{#each navItems as item}
-					<li>
+					<li class="text-4xl">
 						<a href={item.url} on:click={() => ($menu = !$menu)}>{item.title}</a>
 					</li>
 				{/each}
@@ -30,7 +30,7 @@
 		</nav>
 	{/if}
 {:else}
-	<nav class="w-full flex py-4 justify-between h-12">
+	<nav class="w-full flex py-4 justify-between h-12 container">
 		{#each navItems as item}
 			<a class="flex-1" href={item.url}>{item.title}</a>
 		{/each}

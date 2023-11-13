@@ -10,7 +10,6 @@
 
 	onMount(() => {
 		playerWidth = playerContainer.getBoundingClientRect().width;
-		console.log(playerWidth);
 		player = new Player(playerContainer, {
 			id: videoID
 		});
@@ -29,6 +28,7 @@
 		overflow: hidden;
 		max-width: 100%;
 	}
+
 	:global(.embed-container iframe) {
 		position: absolute;
 		top: 0;

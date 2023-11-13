@@ -8,7 +8,7 @@
 	export let data: LayoutData;
 </script>
 
-<header class="container w-full text-white">
+<header class="w-full text-white">
 	<Navbar />
 </header>
 {#key data?.url}

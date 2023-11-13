@@ -1,11 +1,7 @@
 export const navItems = [
   {
-    title: 'Home',
-    url: '/'
-  },
-  {
     title: 'The Movie',
-    url: '/movie'
+    url: '/'
   },
   {
     title: 'The Idea',
