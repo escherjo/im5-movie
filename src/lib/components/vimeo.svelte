@@ -6,10 +6,7 @@
 	let playerContainer: HTMLElement;
 	export let videoID: number;
 
-	let playerWidth = 640;
-
 	onMount(() => {
-		playerWidth = playerContainer.getBoundingClientRect().width;
 		player = new Player(playerContainer, {
 			id: videoID
 		});

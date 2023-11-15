@@ -8,7 +8,6 @@
 	export let i: number;
 
 	let isInView: boolean;
-	let scrollDirection: ScrollDirection;
 	const options: Options = {
 		rootMargin: '-100px',
 		unobserveOnEnter: true
@@ -16,7 +15,6 @@
 
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
 		isInView = detail.inView;
-		scrollDirection = detail.scrollDirection.vertical;
 	};
 </script>
 
@@ -31,7 +29,7 @@
 		class:translate-x-full={!isInView && !isOdd(i)}
 		class:opacity-100={isInView}
 		src="https://source.unsplash.com/random/300x300"
-		alt="random Image"
+		alt="random "
 	/>
 	<div
 		class="transition duration-500"
