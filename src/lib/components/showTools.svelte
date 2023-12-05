@@ -6,6 +6,10 @@
 	// indicating whether or not that element is in inView
 </script>
 
-{#each tools as tool, i (tool.id)}
-	<ToolCard {tool} {i} />
-{/each}
+<section class="grid grid-cols-12">
+	<div class="col-start-2 col-end-10">
+		{#each tools as tool, i (tool.id)}
+			<ToolCard {tool} {i} />
+		{/each}
+	</div>
+</section>
