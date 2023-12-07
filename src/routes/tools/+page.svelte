@@ -8,7 +8,7 @@
 		'https://lottie.host/25c7b2ab-089e-4afc-b765-f0089d211b61/71Hs6Adp0g.json';
 </script>
 
-<Hero title="Tools" showRobi={false} />
+<Hero title="Tools" showRobi={true} />
 <section class="flex flex-col-reverse lg:flex-row gap-8 justify-between">
 	<p class="lg:max-w-xl self-center">
 		In a bustling metropolis where every circuit hums with urgency, there exists a curious robot
