@@ -16,7 +16,7 @@
 	<Burger />
 	{#if $menu}
 		<nav
-			class="bg-gray-950 h-screen w-screen z-10 flex items-center justify-center"
+			class="bg-gray-950 h-screen w-screen z-10 flex items-center justify-center absolute top-0 left-0"
 			in:fly={{ x: 200, duration: 400, opacity: 0 }}
 			out:fly={{ x: 200, duration: 200, opacity: 0 }}
 		>

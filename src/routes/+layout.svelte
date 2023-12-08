@@ -5,6 +5,7 @@
 	import '@fontsource-variable/oswald';
 	import { fade } from 'svelte/transition';
 	import type { LayoutData } from './$types';
+	import { menu } from '$lib/stores/menu';
 	export let data: LayoutData;
 </script>
 
@@ -12,7 +13,12 @@
 	<Navbar />
 </header>
 {#key data?.url}
-	<main transition:fade class="min-h-screen my-0 text-white container">
+	<main
+		transition:fade
+		class="my-0 text-white container"
+		class:max-h-screen={$menu}
+		class:overflow-hidden={$menu}
+	>
 		<section class=" py-16">
 			<slot />
 		</section>

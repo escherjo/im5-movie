@@ -1,17 +1,19 @@
 <script lang="ts">
 	import type { Tool } from '$lib/data/tools';
 	import { inview } from 'svelte-inview';
-	import type { ObserverEventDetails, ScrollDirection, Options } from 'svelte-inview';
-	const isOdd = (num: number) => num % 2 === 1;
+	import type { ObserverEventDetails, Options } from 'svelte-inview';
 
 	export let tool: Tool;
 	export let i: number;
 
 	let isInView: boolean;
+
 	const options: Options = {
 		rootMargin: '-100px',
 		unobserveOnEnter: true
 	};
+
+	const isOdd = (num: number) => num % 2 === 1;
 
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
 		isInView = detail.inView;

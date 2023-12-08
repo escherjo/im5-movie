@@ -10,9 +10,5 @@ export const navItems = [
   {
     title: 'The Tools',
     url: '/tools'
-  },
-  {
-    title: 'The Author',
-    url: '/about'
   }
 ];
