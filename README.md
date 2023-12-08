@@ -1,17 +1,15 @@
-# create-svelte
+# IM5 - Projektarbeit
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Diese Arbeit entstand im Rahmen von 5 Modul Interaktive Medien an der FHGR
 
-## Creating a project
+## Setup
 
-If you're seeing this, you've probably already done this step. Congrats!
+Installation der NPM packages
 
 ```bash
 # create a new project in the current directory
-npm create svelte@latest
+npm i
 
-# create a new project in my-app
-npm create svelte@latest my-app
 ```
 
 ## Developing
@@ -25,14 +23,40 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+## Ziel der Webseite
 
-To create a production version of your app:
+In meinem Lehrprojekt werde ich einen 3D Animationsfilm umsetzen.
+Die Webseite koennte dazu dienen, die genauen Learnings sowie den Film selber zu promoten.
 
-```bash
-npm run build
-```
+Da aber die Learnings sowie der Film noch nicht existieren,
+ist alles mit Dummy Text / Bildern abgefuellt.
 
-You can preview the production build with `npm run preview`.
+## Techstack
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Ich habe auf folgende Technologien und Packages gesetzt
+
+1. Sveltekit (JS Framework)
+2. Tailwindcss (CSS)
+3. Lottie-Player (Animationen)
+4. Vimeo Player SDK (Einbindung von Vimeo)
+5. Svelte-Inview (Intersection Observer vereinfacht)
+
+Alles extrem basic. nur das 5. Package haette ich auch weglassen koennen.
+Ein Intersection Observer eigentlich keine grosse Sache ist.
+
+Im Editor laeuft noch Copilot
+
+## Learnings
+
+Am meisten gelernt habe ich im [Hero](src/lib/components/hero.svelte) bei der Animation der Augen.
+Das war etwas neues und hat Spass gemacht.
+Ansonsten ist es eine Basic Webseite.
+
+## Quellen
+
+Offizielle Dokumentation
+
+- Sveltekit / Tailwind / Lottie / Vimeo
+- Texte kommen von ChatGTP
+- Animation von Lottie
+- Bilder von unsplash
