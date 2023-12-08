@@ -7,7 +7,6 @@ Diese Arbeit entstand im Rahmen von 5 Modul Interaktive Medien an der FHGR
 Installation der NPM packages
 
 ```bash
-# create a new project in the current directory
 npm i
 
 ```
