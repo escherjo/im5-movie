@@ -9,6 +9,11 @@
 	export let data: LayoutData;
 </script>
 
+<svelte:head>
+	<title>IM5 | Movie</title>
+	<meta name="author" content="Backpapier" />
+</svelte:head>
+
 <header class="w-full text-white">
 	<Navbar />
 </header>
