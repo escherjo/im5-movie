@@ -4,7 +4,6 @@
 
 	let animationContainer: HTMLElement;
 	let LottiePlayer: any;
-	let button: HTMLElement;
 	let width: number;
 	let height: number;
 
